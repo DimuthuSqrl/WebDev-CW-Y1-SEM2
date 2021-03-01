@@ -1,0 +1,14 @@
+.nav-bar{
+    background-color: chartreuse;
+    padding: 5px;
+}
+.nav-bar li{
+    display: inline;
+    margin: 5px;
+    padding: 10px;
+    background-color:coral;
+}
+#space-nav-bar{
+    margin-left: 600px;
+    background-color: chartreuse;   
+}
