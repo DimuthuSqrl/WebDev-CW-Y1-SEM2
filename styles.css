@@ -1,5 +1,5 @@
 .nav-bar{
-    background-color: chartreuse;
+    background-color: rgb(119, 0, 255);
     padding: 5px;
 }
 .nav-bar li{
@@ -8,7 +8,10 @@
     padding: 10px;
     background-color:coral;
 }
+.nav-bar a{
+    text-decoration: none;
+}
 #space-nav-bar{
-    margin-left: 600px;
-    background-color: chartreuse;   
+    margin-left: 850px;
+    background-color: rgb(119, 0, 255);   
 }
