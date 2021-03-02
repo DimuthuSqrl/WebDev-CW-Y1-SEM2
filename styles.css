@@ -1,17 +1,51 @@
-.nav-bar{
+.nav-bar {
     background-color: rgb(119, 0, 255);
     padding: 5px;
 }
-.nav-bar li{
+
+.nav-bar li {
     display: inline;
-    margin: 5px;
-    padding: 10px;
-    background-color:coral;
+    
 }
 .nav-bar a{
+    margin: 5px;
+    padding: 10px;
+    background-color: coral;
+}
+
+.nav-bar a {
     text-decoration: none;
 }
-#space-nav-bar{
-    margin-left: 850px;
-    background-color: rgb(119, 0, 255);   
+
+#space-nav-bar {
+    margin-left: 650px;
+    background-color: rgb(119, 0, 255);
+}
+
+.nav-bar a:link {
+    color: green;
+}
+
+.nav-bar a:visited {
+    color: brown;
+}
+
+.nav-bar a:hover {
+    color: yellow;
+    background-color: red;
+}
+
+.nav-bar a:active {
+    color: chocolate;
+}
+/* 
+*
+*
+content */
+
+/*image display*/
+
+#image-display img{
+    display: block;
+    margin: auto;       
 }
