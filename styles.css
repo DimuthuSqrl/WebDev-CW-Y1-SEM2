@@ -1,14 +1,86 @@
-.nav-bar{
-    background-color: chartreuse;
-    padding: 5px;
+body {
+    margin: 0;
 }
-.nav-bar li{
+
+.nav-bar {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(119, 0, 255);
+}
+
+.nav-bar li {
     display: inline;
+}
+
+.nav-bar a {
     margin: 5px;
     padding: 10px;
-    background-color:coral;
+    background-color: coral;
 }
-#space-nav-bar{
-    margin-left: 600px;
-    background-color: chartreuse;   
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+#space-nav-bar {
+    margin-left: 650px;
+    background-color: rgb(119, 0, 255);
+}
+
+.nav-bar a:link {
+    color: green;
+}
+
+.nav-bar a:visited {
+    color: brown;
+}
+
+.nav-bar a:hover {
+    color: yellow;
+    background-color: red;
+}
+
+.nav-bar a:active {
+    color: chocolate;
+}
+
+/* 
+*
+*
+content */
+
+#content {
+    padding-top: 75px;
+}
+
+#image-display img {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    padding: 2.5%;
+    width: 70%;
+    background-color: beige;
+    margin: auto;
+}
+
+#overwatch-img {
+    float: left;
+    width: 30%;
+    margin: 20px;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+h2{
+    margin-left: 10%;
+}
+p{
+    font-size: 1.5em;
 }
