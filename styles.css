@@ -74,21 +74,42 @@ content */
     margin: 20px;
 }
 
-h1{
+h1 {
     font-size: 2em;
     text-align: center;
 }
-h2{
+
+h2 {
     margin-left: 10%;
 }
-p{
+
+p {
     text-align: justify;
     font-size: 1.5em;
 }
-.img-fill{
-    width: 100% ;
+
+.img-fill {
+    width: 100%;
 }
-.twitter-tweet{
-    width: fit-content;
+
+.twitter-tweet {
     margin: 0 auto;
+}
+
+#lol-yt {
+    display: block;
+    margin: 0 auto; 
+}
+.points-table{
+
+}
+table td,th{
+    border: solid 5px red;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+h3{
+    text-align: center;
 }
