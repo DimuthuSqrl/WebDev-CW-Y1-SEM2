@@ -12,10 +12,12 @@ body {
 
 .nav-bar li {
     display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-bar a {
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px;
     background-color: coral;
 }
@@ -45,6 +47,22 @@ body {
 .nav-bar a:active {
     color: chocolate;
 }
+
+#page-anchors{
+    background-color: chartreuse;
+    padding: 1% 2.5%;
+}
+#page-anchors ul{
+    display: flex;
+    list-style-type: none;
+}
+#page-anchors a{
+    text-decoration: none;
+}
+#page-anchors li{
+    width: 100px;
+}
+
 
 /* 
 *
