@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ask Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="nav-bar">
+        <div class="logo">Sports<span>Feed</span></div>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/">Did you Know</a></li>
+                <li><a href="https://www.google.com/">Take a Quiz</a></li>
+                <li><a href="askUs.html">Ask from Us</a></li>
+                <li><a href="https://www.google.com/">Merchandise</a></li>
+                <li><a href="https://www.google.com/">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="content-ask">
+        <div class="container">
+            <h2 id="ask-title">Ask From Us</h2>
+            <form method="post" class="reservation-form">
+                <fieldset>
+                    <legend>Subject</legend>
+                    <div class="form-row">
+                        <input type="radio" id="merch" name="theme">
+                        <label for="merch">Shipping</label>
+                        <input type="radio" id="suggestions" name="theme">
+                        <label for="suggestions">Suggestions</label>
+                        <input type="radio" id="other" name="theme">
+                        <label for="other">other</label>
+                    </div>
+                </fieldset>
+                <fieldset id="personal-details">
+                    <legend>Your details</legend>
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone number:</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" placeholder="someone@somewhere.com">
+                    </div>
+                </fieldset>
+                <fieldset id="comments">
+                    <legend>Your Query</legend>
+                    <div class="form-row-textarea">
+                        <textarea name="comments" id="comments-box" cols="50" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset id="view">
+                    <button id="viewe btn">View Query</button>
+                </fieldset>
+                
+                <!-- <fieldset id="send-query">
+                    <legend>Send</legend>
+                    <div id="terms-div">
+                    </div>
+                    <span>This query will be emailed to our servers.</span>
+                    <div>
+                        <label for="agree">I agree</label>
+                        <input type="checkbox" id="agree" value="Agree" name="agree" required>
+                    </div>
+                    <input type="reset" value="Reset" id="reset-btn">
+                    <input type="submit" value="Submit" id="submit-btn" name="submit-btn">
+                </fieldset> -->
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
