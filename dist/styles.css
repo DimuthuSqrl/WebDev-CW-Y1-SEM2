@@ -199,3 +199,7 @@ form #view {
   display: flex;
   justify-content: center;
 }
+
+.none {
+  display: none;
+}

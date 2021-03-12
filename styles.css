@@ -244,4 +244,8 @@ form #view {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.none {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */
