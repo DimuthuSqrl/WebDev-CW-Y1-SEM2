@@ -9,20 +9,20 @@
 <body>
     <!-- nav bar -->
     <div class="nav-bar">
-        <div class="logo">Sports<span>Feed</span></div>
+        <div class="logo"><a href="home.html">Sports<span>Feed</span></a></div>
         <nav>
             <ul>
-                <li><a href="https://www.google.com/">Did you Know</a></li>
-                <li><a href="https://www.google.com/">Take a Quiz</a></li>
+                <li><a href="#">Did you Know</a></li>
+                <li><a href="#">Take a Quiz</a></li>
                 <li><a href="askUs.html">Ask from Us</a></li>
-                <li><a href="https://www.google.com/">Merchandise</a></li>
-                <li><a href="https://www.google.com/">About Us</a></li>
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">About Us</a></li>
             </ul>
         </nav>
     </div>
 
     <div id="content">
-        <div class="container">
+        <div class="container-as">
             <h2 id="ask-title">Ask From Us</h2>
             <form method="post" id="reservation-form">
                 <fieldset>
@@ -30,7 +30,7 @@
                     <div class="form-row">
                         <input type="radio" name="theme" value="Shipping">
                         <label for="merch">Shipping</label>
-                        <input type="radio"  name="theme" value="Suggestions">
+                        <input type="radio" name="theme" value="Suggestions">
                         <label for="suggestions">Suggestions</label>
                         <input type="radio" name="theme" value="other">
                         <label for="other">other</label>
@@ -58,20 +58,32 @@
                     </div>
                 </fieldset>
                 <fieldset id="view">
-                    <button type="button" onclick="viewQuery()">View Query</button>
+                    <button type="button" onclick="viewQuery()">Check</button>
                 </fieldset>
-
-                <!-- this will be visible after clicking the view button -->
-                <div class="wriiten-query">
-                    <p>Name: <span id="name-given"></span></p>
-                    <p>Email: <span id="email-given"></span></p>
-                    <p>Phone Number: <span id="email-given"></span></p>
-                    <p>Subject: <span class="subject"></span></p>
-                    <p>Details: <span class="details"></span></p>
-                </div>
             </form>
+            <!-- this will be visible after clicking the view button -->
+            <div id="written-query" class="none">
+                <p>Name: <span id="name-given"></span></p>
+                <p>Email: <span id="email-given"></span></p>
+                <p>Phone Number: <span id="number-given"></span></p>
+                <p>Subject: <span id="subject"></span></p>
+                <p>Details: <span id="details"></span></p>
+                <div class="btns">
+                    <button type="button" onclick="editForm()">Edit</button>
+                    <label for="submit-btn"></label>
+                    <input id="submit-btn" name="submit-btn" type="submit" value="submit" onclick="sendForm()" href="mailto:someone@yoursite.co" > </input>
+                
+                
+                </div>
+            </div>
             <p id="diplay"></p>
         </div>
+    </div>
+    <div class="footer">
+        <hr>
+        <ul>
+            <li id="navigate-to-editor"><a href="pageEditor.html">Page editor</a></li>
+        </ul>
     </div>
     <script src="app.js"></script>
 </body>

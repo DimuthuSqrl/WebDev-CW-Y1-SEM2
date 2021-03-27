@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Did You Know Page</title>
+	<link rel="stylesheet" href="didyouknowstyles.css">
+</head>
+<body>
+	<script>
+		function btn_submit_click() 
+		{		
+			var background_colour, text_colour;
+			
+			background_colour = select_background.value;
+			text_colour = select_text.value;
+			
+			if(background_colour == 'White'){
+			document.getElementById("overwatch_div").style.backgroundColor = 'white';
+			document.getElementById("image_zoom").style.backgroundColor = 'white';
+			document.getElementById("cricket_div").style.backgroundColor = 'white';
+			document.getElementById("image_zoom2").style.backgroundColor = 'white';
+			}
+			else if(background_colour == 'Blue'){
+			document.getElementById("overwatch_div").style.backgroundColor = 'blue';
+			document.getElementById("image_zoom").style.backgroundColor = 'blue';
+			document.getElementById("cricket_div").style.backgroundColor = 'blue';
+			document.getElementById("image_zoom2").style.backgroundColor = 'blue';
+			}
+
+			if(text_colour == 'Black'){
+			document.getElementById("description1").style.color = 'black';
+			document.getElementById("description2").style.color = 'black';
+			document.getElementById("header_overwatch").style.color = 'black';
+			document.getElementById("header_cricket").style.color = 'black';
+			}
+			else if(text_colour == 'Yellow'){
+			document.getElementById("description1").style.color = 'yellow';
+			document.getElementById("description2").style.color = 'yellow';
+			document.getElementById("header_overwatch").style.color = 'yellow';
+			document.getElementById("header_cricket").style.color = 'yellow';
+			}
+		}
+	</script>
+	<!-- nav bar -->
+	<div class="nav-bar">
+		<div class="logo"><a href="index.html">Sports<span>Feed</span></a></div>
+		<nav>
+			<ul>
+				<li><a href="DidYouKnow.html">Did you Know</a></li>
+				<li><a href="start-up-quiz-page.html">Take a Quiz</a></li>
+				<li><a href="ask-us.html">Ask from Us</a></li>
+				<li><a href="#">Merchandise</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="sitemap.html">Site Map</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- change page colours -->
+	<div id="colour_selection">
+		<label id="lbl_background_colour" for="slct_background">Background Colour:</label>
+		<select name="select_background" id="select_background">
+			<option value="White">White</option>
+			<option value="Blue">Blue</option>
+		</select>
+		<label id="lbl_text_colour" for="slct_text">Text Colour:</label>
+		<select name="select_text" id="select_text">
+		  <option value="Black">Black</option>
+		  <option value="Yellow">Yellow</option>
+		</select>
+		<button id="btn_submit" onclick="btn_submit_click()" type="submit" value="Submit">Submit
+		</button>		
+	</div>
+	<!-- Overwatch Section -->
+	<div id="overwatch_div">
+		<section id="overwatch">
+			<div>
+				<h1 id="header_overwatch">Overwatch</h1>
+				<p id="description1">
+					Philadelphia Fusion continues to be the fan-favorite and one of the most influential organizations in the Overwatch League. Their Academy team Fusion University dominate the NA Contenders scene so much they decided to try their luck in Korea and eventually partnered and rebranded to T1. Over the past three years, Fusion has gone from Season 1 Championship finalists to the middle of the pack to being a dominating team again in 2020. Regardless of performance, their fans are loyally cheering them on their path to claiming their first OWL Championship.
+				</p>
+				<p class="p1">
+					<div class="img_gallery">
+					  <a target="_blank">
+						<img id="image1" src="Images/PhiladelphiaFusion.jpg" alt="Philadelphia Fusion" width="100" height="100">
+						<script>
+							document.getElementById("image1").onmouseover = function() {mouseOver1()};
+							document.getElementById("image1").onmouseout = function() {mouseOut1()};
+							
+							function mouseOver1() {
+							  document.getElementById("zoom_image").src='Images/PhiladelphiaFusion.jpg';
+							}
+
+							function mouseOut1() {
+								document.getElementById("zoom_image").src = '';							  
+							}
+						</script>
+					  </a>
+					</div>		
+				</p>
+				<p class="p1">
+					<div class="img_gallery">
+					  <a target="_blank">
+						<img id="image2" src="Images/Philadelphia.png" alt="Philadelphia Fusion" width="100" height="100">
+						<script>
+							document.getElementById("image2").onmouseover = function() {mouseOver2()};
+							document.getElementById("image2").onmouseout = function() {mouseOut2()};
+							
+							function mouseOver2() {
+							  document.getElementById("zoom_image").src='Images/Philadelphia.png';
+							}
+
+							function mouseOut2() {
+							  document.getElementById("zoom_image").src = '';
+							}
+						</script>
+					  </a>
+					</div>
+				</p>
+				<p class="p1">
+					<div class="img_gallery">
+					  <a target="_blank">
+						<img id="image3" src="Images/PhiladelphiaFusion3.jpg" alt="Philadelphia Fusion" width="100" height="100">
+						<script>
+							document.getElementById("image3").onmouseover = function() {mouseOver3()};
+							document.getElementById("image3").onmouseout = function() {mouseOut3()};
+							
+							function mouseOver3() {
+							  document.getElementById("zoom_image").src='Images/PhiladelphiaFusion3.jpg';
+							}
+
+							function mouseOut3() {
+							  document.getElementById("zoom_image").src = '';
+							}
+						</script>
+					  </a>
+					</div>
+				</p>
+			</div>
+		</section>
+	</div>
+	<!-- Overwatch larger image -->
+	<div id="image_zoom">
+		<p>
+			<img id="zoom_image" width="300" height="300">
+		</p>
+	</div>
+	<!-- Cricket Section -->
+	<div id="cricket_div">
+		<section id="overwatch">
+			<div>
+				<h1 id="header_cricket">Cricket</h1>
+				<p id="description2">A thrusting Jamaican left-hander, Gayle earned himself a black mark on his first senior tour - to England in 2000 - where the new boys were felt to be insufficiently respectful of their elders. But a lack of respect, for opposition bowlers at least, has served Gayle well since then. Tall and imposing at the crease, he loves to carve through the covers off either foot, and has the ability to decimate the figures of even the thriftiest of opening bowlers. And in this era of Twenty20 cricket, Gayle is the batsman who has thrived like no other.
+				</p>
+				<p class="p1">
+					<div class="img_gallery">
+					  <a target="_blank">
+						<img id="image4" src="Images/ChrisGayle.jpg" alt="Chris Gayle" width="100" height="100">
+						<script>
+							document.getElementById("image4").onmouseover = function() {mouseOver4()};
+							document.getElementById("image4").onmouseout = function() {mouseOut4()};
+							
+							function mouseOver4() {
+							  document.getElementById("zoom_image_2").src = '';
+							  document.getElementById("zoom_image_2").src='Images/ChrisGayle.jpg';
+							}
+
+							function mouseOut4() {
+								document.getElementById("zoom_image_2").src = '';							  
+							}
+						</script>
+					  </a>
+					</div>		
+				</p>
+				<p class="p1">
+					<div class="img_gallery">
+					  <a target="_blank">
+						<img id="image5" src="Images/ChrisGayle2.jpg" alt="Chris Gayle" width="100" height="100">
+						<script>
+							document.getElementById("image5").onmouseover = function() {mouseOver5()};
+							document.getElementById("image5").onmouseout = function() {mouseOut5()};
+							
+							function mouseOver5() {
+							  document.getElementById("zoom_image_2").src = '';
+							  document.getElementById("zoom_image_2").src='Images/ChrisGayle2.jpg';
+							}
+
+							function mouseOut5() {
+							  document.getElementById("zoom_image_2").src = '';
+							}
+						</script>
+					  </a>
+					</div>
+				</p>
+			</div>
+		</section>
+	</div>
+	<!-- Cricket larger image -->
+	<div id="image_zoom2">
+		<p>
+			<img id="zoom_image_2" width="300" height="300">
+		</p>
+	</div>
+</body>
+</html>
