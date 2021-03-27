@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+:root {
+  --c1: red;
+  --c2: rgb(146, 145, 145);
+  --c3: #1f2833;
+  --c4: #0b0c10;
+}
+
+body {
+  margin: 0;
+  background-color: var(--c4);
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--c4);
+  height: 50px;
+  padding: 20px;
+}
+
+.nav-bar .logo a {
+  font-size: 2em;
+  color: var(--c2);
+  padding-top: 5px;
+}
+
+.nav-bar .logo a span {
+  color: red;
+  font-weight: bold;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0 50px;
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Titillium Web';
+  color: var(--c1);
+  letter-spacing: 25%;
+  background-color: var(--c3);
+  border-radius: .3em;
+}
+
+.nav-bar li {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.2em;
+}
+
+.nav-bar li:hover {
+  background-color: var(--c2);
+  border-radius: .3em;
+}
+
+#page-anchors {
+  background-color: var(--c2);
+  padding: .1% 2.5%;
+  width: 80%;
+  margin: auto;
+}
+
+#page-anchors ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page-anchors ul li {
+  margin: 0 20px;
+}
+
+#page-anchors a {
+  text-decoration: none;
+  color: var(--c4);
+  font-family: 'Titillium Web';
+  font-weight: bold;
+}
+
+/* 
+*
+*
+content */
+#content {
+  padding-top: 75px;
+}
+
+#content .container {
+  font-family: Helvetica;
+  font-size: .8em;
+  color: var(--c2);
+  padding: 2.5%;
+  width: 80%;
+  background-color: var(--c3);
+  margin: auto;
+}
+
+#content #image-display img {
+  display: block;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#content .first-img {
+  float: left;
+  width: 15%;
+  margin: 0 20px;
+}
+
+#content h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#content h2 {
+  margin-left: 10%;
+}
+
+#content p {
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+#content .img-fill {
+  width: 100%;
+}
+
+#content .twitter-tweet {
+  margin: 0 auto;
+}
+
+#content .twitter-tweet p {
+  background-color: var(--c4);
+}
+
+#lol-yt {
+  display: block;
+  margin: 0 auto;
+}
+
+.points-table {
+  border: solid 2px var(--c2);
+}
+
+.points-table td,
+.points-table th {
+  border: solid 2px var(--c2);
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+h3 {
+  text-align: center;
+}
+
+#content .container-as {
+  font-family: Helvetica;
+  color: var(--c2);
+  background-color: var(--c3);
+  margin: auto;
+  width: 60%;
+  padding: 140px 25px 100px 25px;
+}
+
+#content .container-as #ask-title {
+  margin: 0;
+  font-size: 3em;
+  margin-left: 0;
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+form label {
+  display: inline-block;
+  width: 120px;
+}
+
+form .form-row {
+  font-size: 1.3em;
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+form legend {
+  font-size: 1.5em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="email"] {
+  width: 200px;
+}
+
+form .form-row-textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .form-row-textarea textarea {
+  resize: none;
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+form #view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.none {
+  display: none;
+}
+
+#written-query {
+  width: 50%;
+  margin: 70px auto;
+}
+
+.footer {
+  background-color: var(--c3);
+  height: 150px;
+}
+
+.footer hr {
+  margin: 0;
+}
+
+.footer ul {
+  margin-top: 0px;
+  list-style-type: none;
+}
+
+.footer li {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer a {
+  font-size: 1.5em;
+  color: var(--c2);
+  text-decoration: none;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-image: url("images/icons/up.jpg");
+  background-size: 50px;
+  border-radius: 50px;
+  background-position: center;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.scroll-up.active {
+  visibility: visible;
+}

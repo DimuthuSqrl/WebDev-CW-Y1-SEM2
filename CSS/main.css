@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+:root {
+  --c1: red;
+  --c2: rgb(146, 145, 145);
+  --c3:  #1f2833;
+  --c4: #0b0c10;
+}
+
+body {
+  margin: 0;
+  background-color: var(--c4);
+}
+
+.nav-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--c4);
+  height: 50px;
+  padding: 20px;
+}
+
+.nav-bar .logo a {
+  font-size: 2em;
+  color: var(--c2);
+  padding-top: 5px;
+}
+
+.nav-bar .logo a span {
+  color: red;
+  font-weight: bold;
+}
+
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0 50px;
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Titillium Web';
+  color: var(--c1);
+  background-color: var(--c3);
+  border-radius: .3em;
+}
+
+.nav-bar li {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.2em;
+}
+
+.nav-bar li:hover {
+  background-color: var(--c2);
+  border-radius: .3em;
+}
+
+#page-anchors {
+  background-color: var(--c2);
+  padding: .1% 2.5%;
+  width: 80%;
+  margin: auto;
+}
+
+#page-anchors ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page-anchors ul li {
+  margin: 0 20px;
+}
+
+#page-anchors a {
+  text-decoration: none;
+  color: var(--c4);
+  font-family: 'Titillium Web';
+  font-weight: bold;
+}
+
+/* 
+*
+*
+content */
+#content {
+  padding-top: 75px;
+}
+
+#content .container {
+  font-family: Helvetica;
+  font-size: .8em;
+  color: #929191;
+  padding: 2.5%;
+  width: 80%;
+  background-color: var(--c3);
+  margin: auto;
+}
+
+#content #image-display img {
+  display: block;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#content .first-img {
+  float: left;
+  width: 15%;
+  margin: 0 20px;
+}
+
+#content h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#content h2 {
+  margin-left: 10%;
+}
+
+#content p {
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+#content .img-fill {
+  width: 100%;
+}
+
+#content .twitter-tweet {
+  margin: 0 auto;
+}
+
+#content .twitter-tweet p {
+  background-color: #0b0c10;
+}
+
+#lol-yt {
+  display: block;
+  margin: 0 auto;
+}
+
+.points-table {
+  border: solid 2px var(--c2);
+}
+
+.points-table td, .points-table th {
+  border: solid 2px var(--c2);
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+h3 {
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

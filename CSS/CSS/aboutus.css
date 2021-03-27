@@ -1,0 +1,122 @@
+*{
+	padding:0px;
+	margin:0px;
+    font-family: 'Titillium Web';
+	color:white;
+}
+
+.aboutUsLayout{
+	width:100%;
+	height:802px;
+	font-size:18px;
+	line-height:2em;
+}
+
+.no-hero {
+    position: relative;
+    top: 100px;
+}
+
+.layout{
+	font-family: Helvetica;
+	padding: 3%;
+	width: 80%;
+	background-color: var(--c3);
+	margin: auto;
+	border-radius: 20px;
+}
+
+/*about us section*/
+.container-about{
+    cursor: pointer;
+}
+
+.caption {
+    position: relative;
+    overflow: hidden;
+}
+
+.caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+
+.caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+
+.caption__media {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: 350px;
+}
+
+.caption__overlay {
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+
+}
+
+/* special effects about us  */
+.caption:hover .caption__overlay {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.caption__overlay__title {
+    -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+    transform: translateY( calc(-100% - 10px) );
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay__title {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.about-thumbs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-about {
+    flex-basis: 24%;
+}
+
+.cv-description {
+    margin: 10px;
+}
+
+/* page editor */
+.footer {
+	font-family: Titillium Web;
+	padding-top:20px;
+	background-color:#2c3e50;
+	height:40px;
+}
+
+.footer a{
+	padding:10px 20px;
+	cursor:pointer;
+	color: black;
+	border-radius:10px;
+	text-decoration:none;
+}
+

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+:root {
+  --c1: red;
+  --c2: rgb(146, 145, 145);
+  --c3: #1f2833;
+  --c4: #0b0c10;
+}
+
+body {
+  margin: 0;
+  background-color: var(--c4);
+}
+
+#nav-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+		  justify-content: space-between;
+  background-color: #0b0c10;
+  height: 50px;
+  padding: 20px;
+}
+
+#nav-bar #logo {
+  font-size: 2em;
+  color: var(--c2);
+  padding-top: 5px;
+}
+
+#nav-bar #logo span {
+  color: red;
+  font-weight: bold;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0 50px;
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Titillium Web';
+  color: var(--c1);
+  letter-spacing: 25%;
+  background-color: var(--c3);
+  border-radius: .3em;
+}
+
+#nav-bar li {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.2em;
+}
+
+#nav-bar li:hover {
+  background-color: var(--c2);
+  border-radius: .3em;
+}
+
+/* Did You Know Page */
+
+#colour_selection {
+  background-color: var(--c2);
+  padding: .1% 2.5%;
+  width: 80%;
+  margin: auto;
+}
+
+#colour_selection ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+		  justify-content: center;
+}
+
+#colour_selection ul li {
+  margin: 0 20px;
+}
+
+#colour_selection a {
+  text-decoration: none;
+  color: var(--c4);
+  font-family: 'Titillium Web';
+  font-weight: bold;
+}
+
+#colour_selection {
+  background-color: var(--c2);
+  padding: .1% 2.5%;
+  width: 80%;
+  margin: auto;
+}
+
+#colour_selection ul li {
+  margin: 0 20px;
+}
+
+#colour_selection a {
+  text-decoration: none;
+  color: var(--c4);
+  font-family: 'Titillium Web';
+  font-weight: bold;
+}
+
+#select_background, #select_text {
+	width: 25%;
+	padding: 4px 4px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid rgb(146, 145, 145);
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+}
+
+#btn_submit {			
+	padding: 4px 4px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #4CAF50;
+	border-radius: 4px;
+	background-color: white;
+	color: black;	
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+#btn_submit:hover {
+	background-color: red;
+	color: white;
+}
+
+#overwatch_div, #cricket_div {
+  padding: 1%;
+  width: 83%;
+  height: 260px;
+  background-color: var(--c3);
+  margin: 10px 100px;
+}
+
+#image_zoom, #image_zoom2{
+  padding: 1%;
+  width: 83%;
+  height: 320px;
+  background-color: var(--c3);
+  margin: 10px 100px;
+}
+
+div.img_gallery {
+  margin: 5px;
+  float: left;
+  width: 100px;
+  color: white;
+}
+
+div.img_gallery:hover {
+  border: 1px solid #777;
+  background-color: #4CAF50;
+  color: white;
+}
+
+div.img_gallery img {
+  width: 100px;
+  height: 100px;
+  float: center;
+}
+
+#header_overwatch, #header_cricket {
+  font-family: Helvetica;
+  font-size: 1.5em;
+  text-align: center;
+  color: #929191;
+}
+
+#description1, #description2 {
+  text-align: justify;
+  font-size: 1em;
+  color: #929191;
+}
+/*# sourceMappingURL=styles.css.map */
